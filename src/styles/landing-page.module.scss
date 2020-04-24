@@ -1,0 +1,73 @@
+@import 'colours';
+@import 'fonts';
+@import 'media-queries';
+
+$base-font-size-large: 2.7em;
+$base-font-size-small: 1em;
+$primary-title: 'Montserrat', sans-serif;
+$subtext: 'Questrial', sans-serif;
+
+.heading {
+  font-size: $base-font-size-large;
+  letter-spacing: .1em;
+  font-family: $primary-title;
+  color: $grey;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 1em 0em 0em 0em;
+  line-height: 1;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-large*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-large*1.5
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-large*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-large*2.5
+  }
+}
+
+.subtext {
+  font-size: $base-font-size-small;
+  font-family: $subtext;
+  letter-spacing: .1em;
+  color: $grey;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 1.8em 0em;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.5
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.5
+  }
+}
+
+.quoteBox {
+  overflow: visible;
+}
+
+.textContainer {
+  margin-left: 55%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start;
+  width: 110%;
+  height: 100%;
+}

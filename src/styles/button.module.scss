@@ -1,0 +1,28 @@
+@import 'colours';
+@import 'fonts';
+@import 'media-queries';
+
+$base-font-size-small: 1em;
+$primary-title: 'Montserrat', sans-serif;
+$subtext: 'Questrial', sans-serif;
+
+.button {
+  border: .3em solid $grey;
+  font-weight: 700;
+  font-family: $primary-title;
+  font-size: $base-font-size-small;
+  color: $grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0.7em 1.5em;
+  transition: all .5s; 
+
+  &:hover {
+    border: .3em solid $olive;
+    background-color: $olive;
+    color: white;
+    cursor: pointer;
+    
+  }
+}
