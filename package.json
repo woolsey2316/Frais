@@ -17,7 +17,6 @@
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-ffmpeg": "^0.3.8",
     "gatsby-transformer-sharp": "^2.3.19",
-    "gatsby-video": "^0.2.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

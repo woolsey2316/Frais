@@ -17,7 +17,7 @@ export default () => (
   `}
     render={data => {
       const imageFluid = data.file.childImageSharp.fluid
-      return <Img alt='wodd with flaky paint' fluid={imageFluid} />
+      return <Img alt='wood with flaky paint' fluid={imageFluid} />
     }}
   />
 )

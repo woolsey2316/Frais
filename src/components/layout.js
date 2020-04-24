@@ -8,6 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Footer from '../containers/Footer'
+import SiteNavigation from '../containers/SiteNavigation'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,20 +24,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <SiteNavigation/>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <Footer/>
     </>
   )
 }

@@ -8,7 +8,7 @@ export default () => (
     query {
       file(relativePath: { eq: "hand-leaf.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2376) {
+          fluid(maxWidth: 2376, quality:90) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -17,7 +17,9 @@ export default () => (
   `}
     render={data => {
       const imageFluid = data.file.childImageSharp.fluid
-      return <Img alt='person holding leaf' fluid={imageFluid} />
+      return (
+        <Img alt='person holding leaf' fluid={imageFluid} style={{height:'100%',width:'85%'}}/>
+      )
     }}
   />
 )

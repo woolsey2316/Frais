@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from '../components/image'
-
+import Style from '../styles/instagram.module.scss'
 export default (props) => {
   let Albulm = [];
   for (let i=0; i < props.size; i++) {
@@ -9,7 +9,7 @@ export default (props) => {
     )
   }
   return (
-    <div style={{display: 'flex'}}>
+    <div className={Style.container}>
       {Albulm}
     </div>
   )

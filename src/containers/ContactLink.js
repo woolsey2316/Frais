@@ -6,7 +6,7 @@ import linkStyle from "../styles/navlink.module.scss"
 export default (props) => {
   return (
     <div style={{display: 'flex', justifyContent: 'flex-start', flexDirection: 'column'}}>
-      <h3>Contact</h3>
+      <h3 className={navStyle.heading}>Contact</h3>
       <nav className={navStyle.verticalNav}>
         <NavLink style={linkStyle.verticalLink} name="123-456-7890" />
         <NavLink style={linkStyle.verticalLink} name="info@myDomain.com" />

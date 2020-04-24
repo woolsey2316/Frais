@@ -8,7 +8,7 @@ export default () => (
     query {
       file(relativePath: { eq: "candle-on-painted-wood.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1000, quality:90) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -17,7 +17,7 @@ export default () => (
   `}
     render={data => {
       const imageFluid = data.file.childImageSharp.fluid
-      return <Img alt='spoon with melted wax' fluid={imageFluid} />
+      return <Img style={{height:'90%',width:'65%'}} alt='spoon with melted wax' fluid={imageFluid} />
     }}
   />
 )

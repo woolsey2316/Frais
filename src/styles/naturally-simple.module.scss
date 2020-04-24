@@ -3,13 +3,12 @@
 @import 'media-queries';
 
 $base-font-size-xlarge: 2.4em;
-$base-font-size-large: 1.3em;
+$base-font-size-large: 1.1em;
 $base-font-size-medium: 1em;
-$base-font-size-small: 0.65em;
-$primary-title: 'Montserrat', sans-serif;
-$subtext: 'Questrial', sans-serif;
+$base-font-size-small: 0.95em;
+$base-font-size-xsmall: 0.9em;
 
-.h1 {
+.MainContainer_title {
   font-size: $base-font-size-xlarge;
   letter-spacing: .1em;
   font-family: $primary-title;
@@ -37,33 +36,7 @@ $subtext: 'Questrial', sans-serif;
   }
 }
 
-.h3 {
-  font-size: $base-font-size-large;
-  letter-spacing: .1em;
-  font-family: $primary-title;
-  color: $grey;
-  overflow: visible;
-  text-transform: uppercase;
-  margin: 1em 0em 0em 0em;
-  line-height: 1.5;
-
-  @media #{$mq-medium} {
-    font-size: $base-font-size-large*1.2
-  }
-  @media #{$mq-large} {
-    font-size: $base-font-size-large*1.5
-  }
-
-  @media #{$mq-xlarge} {
-    font-size: $base-font-size-large*1.9
-  }
-
-  @media #{$mq-xxlarge} {
-    font-size: $base-font-size-large*2.5
-  }
-}
-
-.p {
+.description {
   font-size: $base-font-size-small;
   letter-spacing: .1em;
   font-family: $subtext;
@@ -71,7 +44,7 @@ $subtext: 'Questrial', sans-serif;
   overflow: visible;
   margin: 2em 0em;
   line-height: 2;
-  text-align: center;
+  text-align: left;
 
   @media #{$mq-medium} {
     font-size: $base-font-size-small*1.2
@@ -89,57 +62,165 @@ $subtext: 'Questrial', sans-serif;
   }
 }
 
-.a {
-  font-size: $base-font-size-medium;
+.h3 {
+  font-size: $base-font-size-xlarge;
   letter-spacing: .1em;
   font-family: $primary-title;
   color: $grey;
   overflow: visible;
   text-transform: uppercase;
   margin: 1em 0em 0em 0em;
-  line-height: 1;
+  line-height: 1.5;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-medium*1.2
+    font-size: $base-font-size-xlarge*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-medium*1.5
+    font-size: $base-font-size-xlarge*1.5
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-medium*1.9
+    font-size: $base-font-size-xlarge*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-medium*2.5
+    font-size: $base-font-size-xlarge*2.5
   }
 }
 
-.mainContainer__topCorner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+.p_belowTitle {
+  font-size: $base-font-size-xsmall;
+  letter-spacing: .1em;
+  font-family: $subtext;
+  color: $grey;
+  overflow: visible;
+  margin: 2em 0em;
+  line-height: 2;
+  text-align: left;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-xsmall*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-xsmall*1.5
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-xsmall*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-xsmall*2.5
+  }
+}
+
+.SubContainer__personName {
+  font-size: $base-font-size-xsmall;
+  letter-spacing: .1em;
+  font-family: $primary-title;
+  color: $grey-green;
+  overflow: visible;
+  margin: 2em 0em;
+  line-height: 2;
   text-align: right;
-  padding-right: 10%;
-  padding-left: 40%;
+  text-transform: uppercase;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-xsmall*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-xsmall*1.5
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-xsmall*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-xsmall*2.5
+  }
 }
 
-.mainContainer__bottomCorner {
+
+.SubContainer__button {
+  border: .3em solid $grey;
+  font-family: $primary-title;
+  font-size: $base-font-size-small;
+  color: $grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0.7em .2em;
+  transition: all .5s; 
+  margin-top: 15%;
+  margin-left: -30%;
+  width: 50%;
+  z-index: 1000;
+
+  &:hover {
+    border: .3em solid $olive;
+    background-color: $olive;
+    color: white;
+    cursor: pointer;
+    
+  }
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.5
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.5
+  }
+}
+
+.q {
+  font-size: $base-font-size-xsmall;
+  letter-spacing: .1em;
+  font-family: $subtext;
+  color: $grey-green;
+  overflow: visible;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 25%;
+  font-style: italic;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-xsmall*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-xsmall*1.5
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-xsmall*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-xsmall*2.5
+  }
+}
+
+.MainContainer {
+  text-align: center;
+  padding: 5% 15%;
+}
+
+.SubContainer__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-right: 10%;
-  padding-left: 40%;
+  justify-content: flex-start;
+  
 }
 
-.mainContainer__video {
-  padding-top: 20% 
-}
-
-.mainContainer {
+.SubContainer {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
 }

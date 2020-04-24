@@ -6,11 +6,14 @@ import NewsLetter from './NewsLetter'
 
 export default () => {
   return (
-    <div style={{display: "flex", justifyContent: "space-around"}}>
-      <FraisLink/>
-      <HelpLink/>
-      <ContactLink/>
-      <NewsLetter/>
-    </div>
+    <React.Fragment>
+      <hr/>
+      <div style={{display: "flex", justifyContent: "space-around"}}>
+        <FraisLink/>
+        <HelpLink/>
+        <ContactLink/>
+        <NewsLetter/>
+      </div>
+    </React.Fragment>
   )
 }

@@ -5,3 +5,14 @@
  */
 
 // You can delete this file if you're not using it
+const path = require('path')
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    devtool: "eval-source-map",
+    resolve: {
+      alias: {
+        "react": path.resolve('./node_modules/react')
+      }
+    }
+  })
+}
