@@ -1,0 +1,36 @@
+@import 'fonts';
+@import 'media-queries';
+@import 'colours';
+
+$base-font-size-small: 0.9em;
+
+.description {
+  font-size: $base-font-size-small;
+  letter-spacing: .1em;
+  font-family: $subtext;
+  color: $grey;
+  overflow: visible;
+  margin: 3em;
+  line-height: 2;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.5
+  }
+}
+
+.description___green {
+  @extend .description;
+  color: $olive;
+
+}

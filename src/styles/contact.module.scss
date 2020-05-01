@@ -1,0 +1,10 @@
+@import 'fonts';
+@import 'media-queries';
+@import 'colours';
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5em;
+
+}

@@ -8,7 +8,7 @@ export default () => {
   return (
     <React.Fragment>
       <hr/>
-      <div style={{display: "flex", justifyContent: "space-around"}}>
+      <div style={{display: "flex", justifyContent: "space-around", marginLeft: "10%"}}>
         <FraisLink/>
         <HelpLink/>
         <ContactLink/>

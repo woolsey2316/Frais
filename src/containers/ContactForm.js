@@ -24,8 +24,9 @@ class ContactForm extends React.Component {
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
           method="POST"
-        > <p>Enter Your Name *</p>
-          <div className={Style.formGroup}>
+        ><div style={{display: 'flex'}}> 
+          <div style={{marginRight:"6em"}}>
+          <p className={Style.italic}>Enter Your Name *</p>
             <input
               type="text"
               className={Style.input}
@@ -33,9 +34,9 @@ class ContactForm extends React.Component {
               placeholder="Full Name"
               onChange={this.onNameChange.bind(this)}
             />
-          </div>
-          <p>Enter Your Email *</p>
+          </div> 
           <div className={Style.formGroup}>
+            <p className={Style.italic}>Enter Your Email *</p>
             <input
               type="text"
               className={Style.input}
@@ -45,18 +46,19 @@ class ContactForm extends React.Component {
               onChange={this.onEmailChange.bind(this)}
             />
           </div>
-          <p>Enter Your Phone</p>
+          </div>
+          <p className={Style.italic}>Enter Your Phone</p>
           <div className={Style.formGroup}>
             <input
               type="text"
               className={Style.input}
               aria-describedby="emailHelp"
-              value={this.state.email}
+              value={this.state.phone}
               placeholder="Phone Number"
               onChange={this.onPhoneChange.bind(this)}
             />
           </div>
-          <p>Enter Your Message *</p>
+          <p className={Style.italic}>Enter Your Message *</p>
           <div className={Style.formGroup}>
             <textarea
               className={Style.input}
@@ -71,7 +73,6 @@ class ContactForm extends React.Component {
             <button type="submit" className={Style.button}>
               Submit
             </button>
-            <p className={Style.subtext}>Thanks for submitting!</p>
           </div>
         </form>
       </div>

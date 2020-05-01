@@ -3,11 +3,12 @@ import Style from '../styles/favourites.module.scss'
 import buttonStyle from '../styles/button.module.scss'
 import MainPageVideo from '../components/MainPageVideo'
 import CandleSpoonImage from '../components/CandleSpoonImage'
+import SectionTitle from '../components/SectionTitle'
 
 export default () => {
   return (
     <React.Fragment>
-      <h1 className={Style.h1}>Our Favorites</h1>
+      <SectionTitle heading="Our Favorites"/>
       <div className={Style.MainContainer}>
         <div className={Style.MainContainer__topCorner}>
           <h3 className={Style.h3}>Probiotic <br/> Cleansing Bars</h3>

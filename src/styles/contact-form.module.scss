@@ -1,0 +1,151 @@
+@import 'colours';
+@import 'fonts';
+@import 'media-queries';
+
+$base-font-size-xlarge: 2.4em;
+$base-font-size-large: 1.3em;
+$base-font-size-medium: 1em;
+$base-font-size-small: 0.8em;
+
+.heading {
+  font-size: $base-font-size-xlarge;
+  letter-spacing: .1em;
+  font-family: $primary-title;
+  font-weight: 800;
+  color: $grey-green;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 1em 0em 0em 0em;
+  line-height: 1;
+  text-align: center;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-xlarge*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-xlarge*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-xlarge*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-xlarge*2.5
+  }
+}
+
+.h3 {
+  font-size: $base-font-size-large;
+  letter-spacing: .1em;
+  font-family: $primary-title;
+  color: $grey;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 1em 0em 0em 0em;
+  line-height: 1.5;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-large*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-large*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-large*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-large*2.5
+  }
+}
+
+.p {
+  font-size: $base-font-size-small;
+  font-family: $subtext;
+  color: $grey;
+  overflow: visible;
+  margin: 0em;
+  line-height: 2;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.5
+  }
+}
+
+.italic {
+  @extend .p;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 1em 0em; 
+}
+
+.button {
+  border: .3em solid $grey-green;
+  font-family: $primary-title;
+  font-size: $base-font-size-small;
+  color: white;
+  background-color: $grey-green;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.7em 2.6em;
+  transition: all .5s; 
+  position: relative;
+  margin: 2em 0em;
+  top: 50%;
+  left: 50%;
+
+  &:hover {
+    border: .3em solid $light-grey;
+    background-color: $light-grey;
+    color: $grey;
+    cursor: pointer;
+    
+  }
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.5
+  }
+}
+
+.input {
+  font-family: $subtext;
+  font-size: $base-font-size-small;
+  padding: .5em .5em .5em 2em;
+  border: transparent;
+  border-bottom: .1em solid $grey;
+  width: 100%;
+
+  &:hover {
+    border-bottom: .1em solid $grey;
+  }
+}
+
+.inputContainer {
+  min-width: 250px;
+  min-height: 3em;
+}

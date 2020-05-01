@@ -1,0 +1,159 @@
+@import 'colours';
+@import 'fonts';
+@import 'media-queries';
+
+$base-font-size-xlarge: 2.4em;
+$base-font-size-large: 1.3em;
+$base-font-size-medium: 1em;
+$base-font-size-small: 0.8em;
+
+
+.heading {
+  font-size: $base-font-size-xlarge;
+  letter-spacing: .1em;
+  font-family: $primary-title;
+  font-weight: 800;
+  color: $grey-green;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 1em 0em 0em 0em;
+  line-height: 1;
+  text-align: center;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-xlarge*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-xlarge*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-xlarge*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-xlarge*2.5
+  }
+}
+
+.h3 {
+  font-size: $base-font-size-large;
+  letter-spacing: .1em;
+  font-family: $primary-title;
+  color: $grey;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 1em 0em 0em 0em;
+  line-height: 1.5;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-large*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-large*1.6
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-large*1.9
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-large*2.5
+  }
+}
+
+.p {
+  font-size: $base-font-size-small;
+  letter-spacing: .1em;
+  font-family: $subtext;
+  color: $grey;
+  overflow: visible;
+  margin: 0em;
+  line-height: 2;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.4
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.6
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.1
+  }
+}
+
+.button {
+  border: .3em solid $grey-green;
+  font-family: $primary-title;
+  font-size: $base-font-size-small;
+  color: white;
+  background-color: $grey-green;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.7em 2.6em;
+  transition: all .5s; 
+  z-index: 1000;
+
+  &:hover {
+    border: .3em solid $light-grey;
+    background-color: $light-grey;
+    color: $grey;
+    cursor: pointer;
+    
+  }
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.4
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.6
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.1
+  }
+}
+
+.input {
+  font-family: $subtext;
+  font-size: $base-font-size-small;
+  padding: .5em .5em .5em 2em;
+  border: .32em solid $grey-green;
+  width: 16em;
+  margin-bottom: 1em;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $base-font-size-small*1.4
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size-small*1.6
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size-small*2.1
+  }
+
+  &:hover {
+    border: .16em solid $grey-green;
+    padding: .63em .56em .63em 2.2em;
+  }
+}
+
+.inputContainer {
+  min-width: 250px;
+  min-height: 3em;
+}

@@ -1,0 +1,30 @@
+@import 'fonts';
+@import 'media-queries';
+$height : 15em;
+$padding-left: 3em;
+
+.navbar {
+  position: fixed; 
+  top: $height;
+  padding-left: $padding-left;
+  z-index: 10000;
+
+  @media #{$mq-medium} {
+    height: $height*1.02;
+    padding-left: $padding-left*1.2;
+  }
+  @media #{$mq-large} {
+    height: $height*1.04;
+    padding-left: $padding-left*1.3;
+  }
+
+  @media #{$mq-xlarge} {
+    height: $height*1.06;
+    padding-left: $padding-left*1.4;
+  }
+
+  @media #{$mq-xxlarge} {
+    height: $height*1.09;
+    padding-left: $padding-left*5;
+  }
+}

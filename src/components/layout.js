@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from '../containers/Footer'
 import SiteNavigation from '../containers/SiteNavigation'
+import Style1 from "../styles/site-navigation.module.scss"
+import Style2 from "../styles/navlink.module.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <SiteNavigation/>
+      <SiteNavigation style={[Style1.horizontalNav, Style2.horizontalLink]} />
         <main>{children}</main>
       <Footer/>
     </>

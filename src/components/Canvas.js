@@ -5,6 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 import Style from "../styles/landing-page.module.scss"
 import buttonStyle from "../styles/button.module.scss"
 
+
 export default ({ className }) => (
   <StaticQuery
     query={graphql`
@@ -31,7 +32,7 @@ export default ({ className }) => (
             position: "relative",
             overflow: "visible",
             height: "100vh",
-            width: "70vw"
+            width: "65vw",
           }}
         >
           <div className={Style.textContainer}>

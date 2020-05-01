@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Style from "../styles/navlink.module.scss"
 
 const NavLink = props => {
   const url = props.name === "Home" ? "" : props.name.replace(/ /g, "")
@@ -9,7 +8,7 @@ const NavLink = props => {
       to={'/'+url}
       className={props.style}
       activeClassName="active"
-      activeStyle={{ color: "#5ba827" }}
+      activeStyle={{ color: "#839c83" }}
     >
       {props.name}
     </Link>

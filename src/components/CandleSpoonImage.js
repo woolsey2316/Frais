@@ -17,7 +17,7 @@ export default () => (
   `}
     render={data => {
       const imageFluid = data.file.childImageSharp.fluid
-      return <Img style={{height:'90%',width:'65%'}} alt='spoon with melted wax' fluid={imageFluid} />
+      return <Img style={{height:'100%',width:'100%'}} alt='spoon with melted wax' fluid={imageFluid} />
     }}
   />
 )

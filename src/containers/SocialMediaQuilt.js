@@ -1,26 +1,27 @@
 import React from "react"
+import PropTypes from 'prop-types';
 import Style from "../styles/social-media-quilt.module.scss"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
-export default props => {
+export default ({styles,colour}) => {
   return (
-    <ul className={Style.ul}>
-      <li>
-        <a href="https://www.facebook.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "facebook-f"]} />
+    <ul className={styles.ul}>
+      <li className={styles.li}>
+        <a className={Style.a} href="https://www.instagram.com" style={{ color: colour }}>
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "instagram"]} />
         </a>
       </li>
-      <li>
-        <a href="https://www.instagram.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "instagram"]} />
+      <li className={styles.li}>
+        <a className={Style.a} href="https://www.facebook.com" style={{ color: colour }}>
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "facebook-f"]} />
         </a>
       </li>
-      <li>
-        <a href="https://www.pinterest.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "pinterest-p"]} />
+      <li className={styles.li}>
+        <a className={Style.a} href="https://www.pinterest.com" style={{ color: colour }}>
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "pinterest-p"]} />
         </a>
       </li>
     </ul>

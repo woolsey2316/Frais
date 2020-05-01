@@ -3,7 +3,9 @@ import Video from "../videos/cutting-soap.mp4"
 import Style from "../styles/favourites.module.scss"
 
 export default () => (
-  <video className={Style.MainContainer__video} verticalAlign="end">
-    <source src={Video} type="video/mp4" />
-  </video>
+  <div style={{display:'flex', flexDirection:'column',justifyContent:'flex-end'}}>
+    <video className={Style.MainContainer__video} width="100%" >
+      <source src={Video} type="video/mp4" />
+    </video>
+  </div>
 )

@@ -1,0 +1,54 @@
+@import 'media-queries';
+@import 'fonts';
+
+$base-font-size-small: 0.9em;
+
+.ul___horizontal {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none; 
+  padding: 0em;
+}
+
+.li___horizontal {
+  margin-right: 1.5em;
+  list-style-type: none; 
+  padding: 0em;
+}
+
+.li___vertical {
+  margin-bottom: 1em;
+  list-style-type: none; 
+  padding-bottom: 1em;
+  
+}
+
+.ul___vertical {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0%;
+}
+
+.icon {
+  font-size: $font-22px;
+
+  @media #{$mq-medium} {
+    font-size: $font-22px*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $font-22px*1.3
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $font-22px*1.4
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $font-22px*1.6
+  }
+}
+
+//avoid colour change when visited etc..
+.a, .a:visited, .a:hover, .a:active {
+  color: inherit;
+}

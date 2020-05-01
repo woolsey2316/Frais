@@ -1,5 +1,5 @@
 import React from "react"
-import Style from "../styles/contact-form.module.scss"
+import Style from "../styles/email-form.module.scss"
 
 class EmailForm extends React.Component {
   constructor(props) {
@@ -17,12 +17,13 @@ class EmailForm extends React.Component {
   render() {
     return (
       <div className={Style.formContainer}>
+        <p className={Style.p} >Enter Email *</p>
         <form
           id="contact-form"
           onSubmit={this.resetForm.bind(this)}
           method="POST"
         >
-          <div className={Style.formGroup}>
+          <div className={Style.inputContainer}>
             <input
               type="email"
               className={Style.input}
@@ -36,7 +37,6 @@ class EmailForm extends React.Component {
             <button type="submit" className={Style.button}>
               Subscribe
             </button>
-            <p className={Style.subtext}>Thanks for submitting!</p>
           </div>
         </form>
       </div>

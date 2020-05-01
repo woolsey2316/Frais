@@ -10,7 +10,7 @@ $base-font-size-medium: 0.9em;
 $base-font-size-small: .7em;
 
 .heading {
-  font-size: $base-font-size-medium;
+  font-size: $font-15px;
   letter-spacing: .1em;
   font-family: $primary-title;
   color: $grey;
@@ -20,18 +20,18 @@ $base-font-size-small: .7em;
   line-height: 4em;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-medium*1.2
+    font-size: $font-15px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-medium*1.5
+    font-size: $font-15px*1.4
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-medium*1.9
+    font-size: $font-15px*1.6
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-medium*2.5
+    font-size: $font-15px*2.1
   }
 }
 
@@ -40,21 +40,21 @@ $base-font-size-small: .7em;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  font-size: $base-font-size-medium;
+  font-size: $font-13px;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-medium*1.2
+    font-size: $font-13px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-medium*1.5
+    font-size: $font-13px*1.4
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-medium*1.9
+    font-size: $font-13px*1.6
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-medium*2.5
+    font-size: $font-13px*1.9
   }
 
 }
@@ -65,21 +65,21 @@ $base-font-size-small: .7em;
   align-content: flex-start;
   justify-content: center;
   flex-wrap: nowrap;
-  font-size: $base-font-size-medium;
+  font-size: $font-13px;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-medium*1.2
+    font-size: $font-13px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-medium*1.5
+    font-size: $font-13px*1.4
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-medium*1.9
+    font-size: $font-13px*1.6
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-medium*2.5
+    font-size: $font-13px*1.9
   }
 
 }
