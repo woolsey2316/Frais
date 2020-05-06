@@ -9,7 +9,7 @@ import Style from '../styles/contact.module.scss'
 export default () => {
   return (
     <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Contact" />
     <SectionTitle heading="Let's Talk"/>
     <div className={Style.container}>
       <ContactDetails/>

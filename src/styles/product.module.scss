@@ -1,0 +1,80 @@
+@import 'fonts';
+@import 'media-queries';
+@import 'colours';
+
+.name {
+  font-size: $font-16px;
+  color: $grey;
+  font-family: $subtext;
+  margin: 1em 0em 0em 0em;
+}
+
+.price {
+  font-size: $font-14px;
+  color: $grey;
+  font-family: $subtext;
+  margin: 0.5em 0em 1em 0em;
+}
+
+.subheading {
+  font-size: $font-16px;
+  color: $faded-grey;
+  font-family: $subtext;
+}
+
+.description {
+  font-size: $font-16px;
+  color: $grey;
+  font-family: $subtext;
+  line-height: 1.6em;
+  margin-top: 3.5em;
+}
+
+.button {
+  border: .3em solid $grey-green;
+  font-family: $primary-title;
+  font-size: $font-10px;
+  color: white;
+  background-color: $grey-green;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3em 5em;
+  transition: all .5s; 
+  width:100%;
+  z-index: 1000;
+  margin: 1em 0em;
+
+  &:hover {
+    border: .3em solid $light-grey;
+    background-color: $light-grey;
+    color: $grey;
+    cursor: pointer;
+    
+  }
+
+  @media #{$mq-medium} {
+    font-size: $font-10px*1.2
+  }
+  @media #{$mq-large} {
+    font-size: $font-10px*1.4
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $font-10px*1.6
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $font-10px*2.1
+  }
+}
+
+.input {
+  padding: 1em 1em 1em 2em;
+  margin: 0.5em 0em;
+}
+
+.a {
+  color: inherit;
+  text-decoration: none;
+}

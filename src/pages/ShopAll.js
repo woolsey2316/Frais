@@ -7,7 +7,7 @@ import ProductList from '../containers/ProductList'
 export default () => {
   return (
     <Layout>
-      <SEO title="404: Not found" />
+      <SEO title="Shop All" />
       <SectionTitle heading="ALL PRODUCTS" description="Made of natural and organic ingredients"/>
       <ProductList filterFunction={(product) => ( typeof product.type === "string")}/>
     </Layout>

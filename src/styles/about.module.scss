@@ -1,0 +1,36 @@
+@import 'fonts';
+@import 'media-queries';
+@import 'colours';
+
+.mosaic {
+  display: grid;
+}
+
+.mosaic__item:first-of-type {
+  grid-column: 2 / span 10;
+  grid-row: 1 / span 8;
+  z-index:1000;
+}
+
+.mosaic__item:last-of-type {
+  grid-column: 1 / span 8;
+  grid-row: 4 / span 12;
+}
+
+.heading {
+  margin:10% 10% 10% 10%;
+  font-weight: 800;
+  font-size: $font-17px;
+  font-family: $primary-title;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color:$grey;
+}
+
+.description {
+  margin:10%;
+  font-family: $subtext;
+  line-height: 1.4em;
+  letter-spacing: 0.07em;
+  color: $grey;
+}

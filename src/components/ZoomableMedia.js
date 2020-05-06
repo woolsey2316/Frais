@@ -1,6 +1,12 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import style from '../styles/zoomable-media.module.scss'
+import styled from 'styled-components'
+
+const Hover = styled.div`
+  overflow:hidden
+`;
 
 const Image = (props) => (
   <StaticQuery
@@ -12,8 +18,8 @@ const Image = (props) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 250, height: 250, quality: 90) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 350, maxHeight: 450, quality: 90) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -29,8 +35,12 @@ const Image = (props) => (
         return null
       }
 
-      const imageFixed = image.node.childImageSharp.fixed
-      return <Img alt={props.alt} fixed={imageFixed} />
+      const imagefluid = image.node.childImageSharp.fluid
+      return ( 
+        <Hover>
+          <Img className={style.image} alt={props.alt} fluid={imagefluid} />
+        </Hover>
+      )
     }}
   />
 )

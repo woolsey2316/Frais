@@ -62,7 +62,7 @@ $base-font-size-small: 0.8em;
 }
 
 .p {
-  font-size: $base-font-size-small;
+  font-size: $font-11px;
   font-family: $subtext;
   color: $grey;
   overflow: visible;
@@ -70,18 +70,18 @@ $base-font-size-small: 0.8em;
   line-height: 2;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-11px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.6
+    font-size: $font-11px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*1.9
+    font-size: $font-11px*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.5
+    font-size: $font-11px*2.5
   }
 }
 

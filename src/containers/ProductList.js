@@ -14,8 +14,9 @@ class ProductList extends Component {
 
     componentDidMount = async () => {
         this.setState({ isLoading: true })
-
+        
         await api.getAllProducts().then(products => {
+            console.log('data retrieved : ' + products.data.data)
             this.setState({
               products: products.data.data,
               isLoading: false,
@@ -38,11 +39,11 @@ class ProductList extends Component {
         console.log('TCL: ProductsList -> render -> products', products)
         
         return (
-          <div style={{display:'flex', justifyContent:'center', flexWrap: 'wrap'}}>
+          <div style={{display:'flex', justifyContent:'center', flexWrap: 'wrap', margin:'5em'}}>
             {
-              products.filter(this.props.filterFunction).map(product => {
+              products.filter(this.props.filterFunction).sort((a, b) => { return (a.type < b.type) ? 1 : -1}).map(product => {
                 return (
-                  <Product product={product}/>
+                  <Product key={product._id} product={product}/>
                 )
               })
             }

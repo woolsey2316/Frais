@@ -2,30 +2,30 @@
 @import 'media-queries';
 @import 'colours';
 
-$base-font-size-small: 0.9em;
+
 
 .description {
-  font-size: $base-font-size-small;
+  font-size: $font-11px;
   letter-spacing: .1em;
   font-family: $subtext;
   color: $grey;
   overflow: visible;
   margin: 3em;
-  line-height: 2;
+  line-height: 1.8em;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-11px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.6
+    font-size: $font-11px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*1.9
+    font-size: $font-11px*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.5
+    font-size: $font-11px*2.5
   }
 }
 

@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Image = (props) => (
+const Image = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -12,7 +12,7 @@ const Image = (props) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 250, height: 250, quality: 90) {
+                fixed(width: 450, height: 600, quality: 90) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -30,7 +30,7 @@ const Image = (props) => (
       }
 
       const imageFixed = image.node.childImageSharp.fixed
-      return <Img alt={props.alt} fixed={imageFixed} />
+      return <Img style={{float:'right'}}  alt={props.alt} fixed={imageFixed} />
     }}
   />
 )

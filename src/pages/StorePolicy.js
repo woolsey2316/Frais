@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 export default () => {
   return (
     <Layout>
+      <SEO title="Store Policy" />
       <SectionTitle heading="Store Policy"/>
       <SubSection heading="Customer Care" description="I’m a customer care section. I’m a great place to write a long text about your company and your services, and, most importantly, how to contact your store with queries. 
       Writing a detailed Customer Care policy is a great way to build trust and reassure your customers that they can buy with confidence."/>

@@ -7,7 +7,7 @@ import ProductList from '../containers/ProductList'
 export default () => {
   return (
     <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="For Home" />
     <SectionTitle heading="Scented Candles" description="Our naturally fragranced candles come in plastic-free, high quality containers"/>
     <ProductList filterFunction={(product) => ( product.type === "candle")}/>
   </Layout>

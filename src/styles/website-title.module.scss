@@ -7,30 +7,31 @@ $base-font-size: 1.3em;
 
 .websiteTitle {  
   font-family: $primary-title;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.5em;
   color: $grey;
-  font-size: $font-29px;
+  font-size: $font-32px;
   line-height: 1;
   border: 0.24em solid $grey;
   padding: 0.4em 0.4em 0.4em 0.8em;
+  margin: 0em;
 
   @media #{$mq-medium} {
-    font-size: $font-29px*1.1;
+    font-size: $font-32px*1.1;
     
   }
   @media #{$mq-large} {
-      font-size: $font-29px*1.2;
+      font-size: $font-32px*1.2;
       
   }
 
   @media #{$mq-xlarge} {
-      font-size: $font-29px*1.6;
+      font-size: $font-32px*1.6;
       
   }
 
   @media #{$mq-xxlarge} {
-      font-size: $font-29px*2;
+      font-size: $font-32px*2;
       
   }
 

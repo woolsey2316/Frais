@@ -1,0 +1,41 @@
+@import 'fonts';
+@import 'media-queries';
+@import 'colours';
+
+.button {
+  font-family: $subtext;
+  border:none;
+  border-bottom: 1px solid $light-grey;
+  background: transparent;
+  padding: 1em 0em;
+  font-size: 1em;
+  text-align: left;
+  margin: 1em 0em;
+  width: 87%;
+
+  &:hover, &:active {
+    color: $faded-grey;
+    cursor: pointer;
+  }
+}
+
+.plusButton {
+  font-family: $subtext;
+  border:none;
+  border-bottom: 1px solid $light-grey;
+  background: transparent;
+  padding: 1em 1em;
+  font-size: 1em;
+
+  &:hover, &:active {
+    color: $faded-grey;
+    cursor: pointer;
+  }
+}
+
+.text {
+  font-family: $subtext;
+  text-align: justify;
+  line-height: 1.4em;
+
+}
