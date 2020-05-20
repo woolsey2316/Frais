@@ -1,10 +1,12 @@
 const mongoose = require('mongoose')
 
 mongoose
-    .connect( process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/productsdb', { useNewUrlParser: true })
-    .catch(e => {
-        console.error('Connection error', e.message)
-    })
+  .connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/productsdb', {
+    useNewUrlParser: true,
+  })
+  .catch(e => {
+    console.error('Connection error', e.message)
+  })
 
 const db = mongoose.connection
 

@@ -38,12 +38,19 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding: 0.7em 1em;
   transition: all .5s; 
-  margin-top: 20%;
-  margin-left: -30%;
-  width: 50%;
-  z-index: 1000;
+  width: 45%;
+  margin: 0 auto;
+  padding: 0.7em 1em;
+  
+
+  @media #{$mq-small} {
+    
+    margin-top: 20%;
+    margin-left: -30%;
+    width: 50%;
+    z-index: 1000;
+  }
 
   &:hover {
     border: .25em solid $olive;
@@ -98,7 +105,10 @@
 
 .MainContainer {
   text-align: center;
-  padding: 5% 15%;
+  padding: 5%;
+  @media #{$mq-small} {
+    padding: 5% 15%;
+  }
 }
 
 .SubContainer__text {
@@ -110,5 +120,8 @@
 
 .SubContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
+  @media #{$mq-small} {
+    grid-template-columns: 50% 50%;
+  }
 }

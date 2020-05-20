@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Image = props => (
   <StaticQuery
@@ -30,9 +30,10 @@ const Image = props => (
       }
 
       const imageFixed = image.node.childImageSharp.fixed
-      return <Img style={{float:'right'}}  alt={props.alt} fixed={imageFixed} />
+      return (
+        <Img style={{ float: 'right' }} alt={props.alt} fixed={imageFixed} />
+      )
     }}
   />
 )
 export default Image
-

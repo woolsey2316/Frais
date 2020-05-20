@@ -2,23 +2,29 @@
 @import 'media-queries';
 @import 'colours';
 
-
-
-
 .heading {
-  font-size: $font-48px;
+  font-size: $font-40px;
   letter-spacing: .2em;
   font-family: $primary-title;
   font-weight: 800;
   color: $grey-green;
   overflow: visible;
   text-transform: uppercase;
-  margin: 3em 0em 0em 0em;
+  
   line-height: 1;
   
-
+  @media #{$mq-xxxsmall} {
+    font-size: $font-48px*0.8;
+  }
+  @media #{$mq-xxsmall} {
+    font-size: $font-48px*0.8;
+  }
+  @media #{$mq-small} {
+    font-size: $font-48px*0.8;
+  }
   @media #{$mq-medium} {
-    font-size: $font-48px*1.1
+    font-size: $font-48px*1.1;
+    margin: 3em 0em 0em 0em;
   }
   @media #{$mq-large} {
     font-size: $font-48px*1.2
@@ -35,14 +41,24 @@
 
 .description {
   font-size: $font-13px;
-  letter-spacing: .1em;
   font-family: $subtext;
   color: $grey;
-  overflow: visible;
-  margin: 2em 0em;
-  line-height: 1.7em;
+  letter-spacing: .1em;
 
+  @media #{$mq-xxxsmall} {
+    font-size: $font-13px*0.9;
+  }
+  @media #{$mq-xxsmall} {
+    font-size: $font-13px;
+  }
+  @media #{$mq-small} {
+    font-size: $font-13px;
+  }
   @media #{$mq-medium} {
+    font-size: $font-13px;
+    overflow: visible;
+    margin: 2em 0em;
+    line-height: 1.7em;
     font-size: $font-13px*1.2
   }
   @media #{$mq-large} {
@@ -58,19 +74,25 @@
   }
 }
 
-.description___centered {
+.heading__centered {
+  @extend .heading;
+  text-align: center;
+
+}
+
+.description__centered {
   @extend .description;
   text-align: center;
 
 }
 
-.description___justify{
+.description__justify{
   @extend .description;
   text-align: justify;
 
 }
 
-.description___leftAligned {
+.description__leftAligned {
   @extend .description;
   text-align: left;
 

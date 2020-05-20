@@ -1,20 +1,20 @@
-import React from "react"
-import axios from "axios"
-import Style from "../styles/contact-form.module.scss"
+import React from 'react'
+import axios from 'axios'
+import Style from '../styles/contact-form.module.scss'
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
     }
   }
 
   resetForm() {
-    this.setState({ name: "", email: "", phone:"", message: "" })
+    this.setState({ name: '', email: '', phone: '', message: '' })
   }
 
   render() {
@@ -24,28 +24,29 @@ class ContactForm extends React.Component {
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
           method="POST"
-        ><div style={{display: 'flex'}}> 
-          <div style={{marginRight:"6em"}}>
-          <p className={Style.italic}>Enter Your Name *</p>
-            <input
-              type="text"
-              className={Style.input}
-              value={this.state.name}
-              placeholder="Full Name"
-              onChange={this.onNameChange.bind(this)}
-            />
-          </div> 
-          <div className={Style.formGroup}>
-            <p className={Style.italic}>Enter Your Email *</p>
-            <input
-              type="text"
-              className={Style.input}
-              aria-describedby="emailHelp"
-              value={this.state.email}
-              placeholder="Email Address"
-              onChange={this.onEmailChange.bind(this)}
-            />
-          </div>
+        >
+          <div style={{ display: 'flex' }}>
+            <div style={{ marginRight: '6em' }}>
+              <p className={Style.italic}>Enter Your Name *</p>
+              <input
+                type="text"
+                className={Style.input}
+                value={this.state.name}
+                placeholder="Full Name"
+                onChange={this.onNameChange.bind(this)}
+              />
+            </div>
+            <div className={Style.formGroup}>
+              <p className={Style.italic}>Enter Your Email *</p>
+              <input
+                type="text"
+                className={Style.input}
+                aria-describedby="emailHelp"
+                value={this.state.email}
+                placeholder="Email Address"
+                onChange={this.onEmailChange.bind(this)}
+              />
+            </div>
           </div>
           <p className={Style.italic}>Enter Your Phone</p>
           <div className={Style.formGroup}>
@@ -66,7 +67,7 @@ class ContactForm extends React.Component {
               value={this.state.message}
               onChange={this.onMessageChange.bind(this)}
               placeholder="Write your Request"
-              style={{ resize: "none" }}
+              style={{ resize: 'none' }}
             />
           </div>
           <div className={Style.miniContainer}>
@@ -98,15 +99,15 @@ class ContactForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
+      method: 'POST',
+      url: 'http://localhost:3002/send',
       data: this.state,
     }).then(response => {
-      if (response.data.status === "success") {
-        alert("Message Sent.")
+      if (response.data.status === 'success') {
+        alert('Message Sent.')
         this.resetForm()
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.")
+      } else if (response.data.status === 'fail') {
+        alert('Message failed to send.')
       }
     })
   }

@@ -1,14 +1,14 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import style from '../styles/zoomable-media.module.scss'
 import styled from 'styled-components'
 
 const Hover = styled.div`
-  overflow:hidden
-`;
+  overflow: hidden;
+`
 
-const Image = (props) => (
+const Image = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -36,7 +36,7 @@ const Image = (props) => (
       }
 
       const imagefluid = image.node.childImageSharp.fluid
-      return ( 
+      return (
         <Hover>
           <Img className={style.image} alt={props.alt} fluid={imagefluid} />
         </Hover>
@@ -45,4 +45,3 @@ const Image = (props) => (
   />
 )
 export default Image
-

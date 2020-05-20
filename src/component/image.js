@@ -1,6 +1,7 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import style from '../styles/instagram.module.scss'
 
 const Image = props => (
   <StaticQuery
@@ -30,9 +31,8 @@ const Image = props => (
       }
 
       const imageFixed = image.node.childImageSharp.fixed
-      return <Img style={{margin: "2%"}} alt={props.alt} fixed={imageFixed} />
+      return <Img className={style.image} alt={props.alt} fixed={imageFixed} />
     }}
   />
 )
 export default Image
-

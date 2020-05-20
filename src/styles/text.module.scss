@@ -14,6 +14,20 @@
   line-height: 1;
   text-align: center;
   
+  @media #{$mq-xxxsmall} {
+    font-size: $font-48px*0.8;
+  }
+  @media #{$mq-xxsmall} {
+
+  }
+
+  @media #{$mq-xsmall} {
+
+  }
+
+  @media #{$mq-small} {
+
+  }
 
   @media #{$mq-medium} {
     font-size: $font-48px*1.1

@@ -1,11 +1,11 @@
 @import 'fonts';
 @import 'media-queries';
-$height : 13em;
+$height : 25em;
 $padding-left: 3em;
 
-.navbar {
+.navbar__sticky {
   position: fixed; 
-  top: $height;
+  bottom: $height;
   padding-left: $padding-left;
   z-index: 10000;
 
@@ -27,4 +27,9 @@ $padding-left: 3em;
     height: $height*1.09;
     padding-left: $padding-left*5;
   }
+}
+
+.navbar__bottom {
+  @extend .navbar__sticky;
+  bottom: -4.7em;
 }

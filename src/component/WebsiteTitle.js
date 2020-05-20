@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Style from '../styles/website-title.module.scss'
 
 export default () => {
@@ -7,4 +7,4 @@ export default () => {
       <h1 className={Style.websiteTitle}>FRAIS</h1>
     </a>
   )
-} 
+}

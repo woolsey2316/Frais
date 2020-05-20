@@ -3,10 +3,20 @@
 @import 'colours';
 
 .container {
-  margin: 5% 10%;
+  
   display: 'flex';
   flex-wrap: 'wrap';
   justify-content: 'center';
+  @media #{$mq-small} {
+    margin: 5% 10%;
+  }
+}
+
+.image {
+  width: 90vw;
+  @media #{$mq-small} {
+    margin: 2%;
+  }
 }
 
 .title {

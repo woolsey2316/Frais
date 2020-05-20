@@ -35,12 +35,29 @@ $base-width: 12em;
   display: flex;  
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-size: $font-13px;
-  margin: 1.8em 0em;
+  margin: 0;
+  width: 9.55em;
+  
+  @media #{$mq-xxxsmall} {
+    font-size: $font-13px;
+    flex-direction: column;
+  }
+
+  @media #{$mq-xxsmall} {
+    font-size: $font-13px*1.4;
+  }
+
+  @media #{$mq-xsmall} {
+    font-size: $font-13px*1.4;
+  }
 
   @media #{$mq-medium} {
-    font-size: $font-13px*1.2
+    font-size: $font-13px*1.4;  
+    flex-direction: row;
+    width: auto;
+    margin: 1.8em 0em;
   }
   @media #{$mq-large} {
     font-size: $font-13px*1.4
@@ -54,6 +71,13 @@ $base-width: 12em;
     font-size: $font-13px*1.9
   }
 
+}
+
+.horizontalNav__collapsed {
+  @extend .horizontalNav;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .verticalNav {
@@ -110,4 +134,82 @@ $base-width: 12em;
       width: $base-width*1.6;
   }
 
+}
+
+.menuIcon {
+  width: 100%;
+  font-size: $font-40px;
+  padding: 0.5em 0;
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  @media #{$mq-xxxsmall} {
+    font-size: $font-40px;
+  }
+
+  @media #{$mq-xxsmall} {
+    
+  }
+
+  @media #{$mq-xsmall} {
+    
+  }
+
+  @media #{$mq-medium} {
+    font-size: $font-40px*1.1;
+    
+  }
+  @media #{$mq-large} {
+    font-size: $font-40px*1.2;
+      
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $font-40px*1.6;
+      
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $font-40px*2;
+      
+  }
+}
+
+.menuButton {
+  border: none;
+  background: transparent;
+  margin: 0em 1em;
+
+  @media #{$mq-xxxsmall} {
+    padding: 0;
+  }
+
+  @media #{$mq-xxsmall} {
+    
+  }
+
+  @media #{$mq-xsmall} {
+    
+  }
+
+  @media #{$mq-medium} {
+    display: none;
+    
+  }
+  @media #{$mq-large} {
+  
+      
+  }
+
+  @media #{$mq-xlarge} {
+  
+      
+  }
+
+  @media #{$mq-xxlarge} {
+  
+      
+  }
 }

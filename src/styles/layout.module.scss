@@ -1,0 +1,34 @@
+@import 'fonts';
+@import 'colours';
+@import 'media-queries';
+
+.banner {
+  width: 100%;
+  font-family: $subtext;
+  font-size: $font-15px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: $grey;
+  background: $light-olive;
+  padding: 0.9em 0em;
+
+  @media #{$mq-medium} {
+    font-size: $font-15px*1.1;
+  }
+  @media #{$mq-large} {
+    font-size: $font-15px*1.2;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $font-15px*1.4;
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $font-15px*2.1;
+  }
+}
+
+.container {
+  margin:'0em 10em';
+}

@@ -15,9 +15,11 @@ app.use(bodyParser.json())
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+  res.send('Hello World!')
 })
 
 app.use('/api', productRouter)
 
-app.listen(process.env.PORT || apiPort, () => console.log(`Server running on port ${apiPort}` ))
+app.listen(process.env.PORT || apiPort, () =>
+  console.log(`Server running on port ${apiPort}`)
+)

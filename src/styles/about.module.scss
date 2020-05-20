@@ -4,17 +4,45 @@
 
 .mosaic {
   display: grid;
+  width: 100%;
+  @media #{$mq-xxxsmall} {
+
+  }
+  @media #{$mq-xxsmall} {
+
+  }
+
+  @media #{$mq-xsmall} {
+    
+  }
+  @media #{$mq-small} {
+    width:50%;
+  }
+  @media #{$mq-medium} {
+    
+  }
+  @media #{$mq-large} {
+    
+  }
+
+  @media #{$mq-xlarge} {
+    
+  }
+
+  @media #{$mq-xxlarge} {
+    
+  }
 }
 
 .mosaic__item:first-of-type {
   grid-column: 2 / span 10;
-  grid-row: 1 / span 8;
+  grid-row: 1 / span 5;
   z-index:1000;
 }
 
 .mosaic__item:last-of-type {
   grid-column: 1 / span 8;
-  grid-row: 4 / span 12;
+  grid-row: 3 / span 6;
 }
 
 .heading {
@@ -33,4 +61,35 @@
   line-height: 1.4em;
   letter-spacing: 0.07em;
   color: $grey;
+}
+
+.inner {
+  width: 100%;  
+  @media #{$mq-xxxsmall} {
+
+  }
+  @media #{$mq-xxsmall} {
+
+  }
+
+  @media #{$mq-xsmall} {
+    
+  }
+  @media #{$mq-small} {
+    width:50%;
+  }
+  @media #{$mq-medium} {
+    
+  }
+  @media #{$mq-large} {
+    
+  }
+
+  @media #{$mq-xlarge} {
+    
+  }
+
+  @media #{$mq-xxlarge} {
+    
+  }
 }

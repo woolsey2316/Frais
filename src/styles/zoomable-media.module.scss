@@ -1,7 +1,38 @@
+@import 'fonts';
+@import 'media-queries';
+
 .image {
-  width:12em;
+  width: 85vw;
   transition: 0.1s;
   &:hover {
     transform:scale(1.2);
+  }
+
+  @media #{$mq-xxxsmall} {
+
+  }
+  @media #{$mq-xxsmall} {
+
+  }
+
+  @media #{$mq-xsmall} {
+    
+  }
+  @media #{$mq-small} {
+    width: 12em;
+  }
+  @media #{$mq-medium} {
+    
+  }
+  @media #{$mq-large} {
+    
+  }
+
+  @media #{$mq-xlarge} {
+    
+  }
+
+  @media #{$mq-xxlarge} {
+    
   }
 }

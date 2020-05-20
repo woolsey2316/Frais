@@ -1,0 +1,61 @@
+@import 'fonts';
+@import 'media-queries';
+
+.outerDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+  @media #{$mq-xxxsmall} {
+
+  }
+  @media #{$mq-xxsmall} {
+
+  }
+
+  @media #{$mq-small} {
+
+  }
+  @media #{$mq-medium} {
+    margin: 0em 8em;
+  }
+  @media #{$mq-large} {
+    
+  }
+
+  @media #{$mq-xlarge} {
+    
+  }
+
+  @media #{$mq-xxlarge} {
+    
+  }
+}
+
+.hr {
+  
+  @media #{$mq-xxxsmall} {
+
+  }
+  @media #{$mq-xxsmall} {
+
+  }
+
+  @media #{$mq-small} {
+
+  }
+  @media #{$mq-medium} {
+    border-top: 0.1em solid rgba(66, 66, 66, 1);
+    margin: 0em 7em;
+  }
+  @media #{$mq-large} {
+    
+  }
+
+  @media #{$mq-xlarge} {
+    
+  }
+
+  @media #{$mq-xxlarge} {
+    
+  }
+}

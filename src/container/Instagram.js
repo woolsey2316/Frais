@@ -6,7 +6,7 @@ export default () => {
   return (
     <React.Fragment>
       <h1 className={textStyle.heading}> #FRAIS</h1>
-      <InstagramAlbulm size={12}/>
+      <InstagramAlbulm size={12} />
     </React.Fragment>
   )
 }
