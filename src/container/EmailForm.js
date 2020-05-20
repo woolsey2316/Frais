@@ -23,7 +23,7 @@ class EmailForm extends React.Component {
           onSubmit={this.resetForm.bind(this)}
           method="POST"
         >
-          <div className={Style.inputContainer}>
+          <div className={Style.inputWrapper}>
             <input
               type="email"
               className={Style.input}

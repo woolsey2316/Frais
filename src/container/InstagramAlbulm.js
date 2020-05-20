@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../components/image'
+import Image from '../component/image'
 import Style from '../styles/instagram.module.scss'
 export default (props) => {
   let Albulm = [];

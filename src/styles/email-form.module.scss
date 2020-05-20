@@ -2,14 +2,8 @@
 @import 'fonts';
 @import 'media-queries';
 
-$base-font-size-xlarge: 2.4em;
-$base-font-size-large: 1.3em;
-$base-font-size-medium: 1em;
-$base-font-size-small: 0.8em;
-
-
 .heading {
-  font-size: $base-font-size-xlarge;
+  font-size: $font-48px;
   letter-spacing: .1em;
   font-family: $primary-title;
   font-weight: 800;
@@ -21,23 +15,23 @@ $base-font-size-small: 0.8em;
   text-align: center;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-xlarge*1.2
+    font-size: $font-48px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-xlarge*1.6
+    font-size: $font-48px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-xlarge*1.9
+    font-size: $font-48px*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-xlarge*2.5
+    font-size: $font-48px*2.5
   }
 }
 
 .h3 {
-  font-size: $base-font-size-large;
+  font-size: $font-21px;
   letter-spacing: .1em;
   font-family: $primary-title;
   color: $grey;
@@ -47,23 +41,23 @@ $base-font-size-small: 0.8em;
   line-height: 1.5;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-large*1.2
+    font-size: $font-21px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-large*1.6
+    font-size: $font-21px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-large*1.9
+    font-size: $font-21px*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-large*2.5
+    font-size: $font-21px*2.5
   }
 }
 
 .p {
-  font-size: $base-font-size-small;
+  font-size: $font-11px;
   letter-spacing: .1em;
   font-family: $subtext;
   color: $grey;
@@ -72,25 +66,25 @@ $base-font-size-small: 0.8em;
   line-height: 2;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-11px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.4
+    font-size: $font-11px*1.4
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*1.6
+    font-size: $font-11px*1.6
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.1
+    font-size: $font-11px*2.1
   }
 }
 
 .button {
   border: .3em solid $grey-green;
   font-family: $primary-title;
-  font-size: $base-font-size-small;
+  font-size: $font-11px;
   color: white;
   background-color: $grey-green;
   text-decoration: none;
@@ -109,52 +103,54 @@ $base-font-size-small: 0.8em;
   }
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-11px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.4
+    font-size: $font-11px*1.4
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*1.6
+    font-size: $font-11px*1.6
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.1
+    font-size: $font-11px*2.1
   }
 }
 
 .input {
   font-family: $subtext;
-  font-size: $base-font-size-small;
+  font-size: $font-11px;
   padding: .5em .5em .5em 2em;
-  border: .28em solid $grey-green;
+  border: .25em solid $grey-green;
   margin-bottom: 1em;
   box-sizing: border-box;
+  min-width: 14em;
+  max-width: 14em;
+  min-height: 2.6em;
+  max-height: 2.6em;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-11px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.4
+    font-size: $font-11px*1.4
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*1.6
+    font-size: $font-11px*1.6
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.1
+    font-size: $font-11px*2.1
   }
 
   &:hover {
     border: .16em solid $grey-green;
-    
-
   }
 }
 
-.inputContainer {
+.inputWrapper {
   min-width: 250px;
-  min-height: 3em;
+  min-height: 4.3em;
 }

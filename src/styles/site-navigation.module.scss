@@ -1,13 +1,9 @@
 @import 'fonts';
-@import "media-queries";
+@import 'media-queries';
 @import 'colours';
 
 $base-height: 5em;
 $base-width: 12em;
-
-$base-font-size: 1em;
-$base-font-size-medium: 0.9em;
-$base-font-size-small: .7em;
 
 .heading {
   font-size: $font-15px;
@@ -67,6 +63,8 @@ $base-font-size-small: .7em;
   justify-content: center;
   flex-wrap: nowrap;
   font-size: $font-13px;
+  font-family: $subtext;
+  color: $grey;
 
   @media #{$mq-medium} {
     font-size: $font-13px*1.2
@@ -87,16 +85,12 @@ $base-font-size-small: .7em;
 
 .container {
   font-family: $subtext;
-  background-color: $box-colour;
   text-align: center;
   height: $base-height;
   width: $base-width;
   min-width: 218px;
   align-self: flex-start;
 
-}
-
-.container {
   @media #{$mq-medium} {
     height: $base-height*1.2;
     width: $base-width*1.2;
@@ -116,10 +110,4 @@ $base-font-size-small: .7em;
       width: $base-width*1.6;
   }
 
-}
-
-@media (max-width: 1244px) {
-    .container {
-    float: left;
-  }
 }

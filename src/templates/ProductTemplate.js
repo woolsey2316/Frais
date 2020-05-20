@@ -1,8 +1,8 @@
 import React from 'react'
-import ProductImage from '../components/ProductImage'
+import ProductImage from '../component/ProductImage'
 import Style from '../styles/product.module.scss'
-import Layout from '../components/Layout'
-import DropDownText from '../components/DropDownText'
+import Layout from '../component/layout'
+import DropDownText from '../component/DropDownText'
 
 export default ({pageContext}) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react"
-import EmailForm from "../containers/EmailForm"
+import EmailForm from "./EmailForm"
 import Style from "../styles/site-navigation.module.scss"
 
 export default () => {

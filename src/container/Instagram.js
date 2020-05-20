@@ -1,12 +1,11 @@
 import React from 'react'
 import InstagramAlbulm from './InstagramAlbulm'
-import Style from '../styles/instagram.module.scss'
-import SectionTitle from '../components/SectionTitle'
+import textStyle from '../styles/text.module.scss'
 
 export default () => {
   return (
     <React.Fragment>
-      <SectionTitle heading="#FRAIS"></SectionTitle>
+      <h1 className={textStyle.heading}> #FRAIS</h1>
       <InstagramAlbulm size={12}/>
     </React.Fragment>
   )

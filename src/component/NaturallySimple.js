@@ -1,7 +1,7 @@
 import React from 'react'
 import HoldingLeafImage from './HoldingLeafImage'
 import Style from '../styles/naturally-simple.module.scss'
-import SectionTitle from '../components/SectionTitle'
+import SectionTitle from '../component/SectionTitle'
 
 export default () => {
   return (

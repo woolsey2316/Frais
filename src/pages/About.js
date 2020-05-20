@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import SectionTitle  from '../components/SectionTitle'
-import Alison from '../components/Alison'
-import Leaves from '../components/Leaves'
+import Layout from '../component/layout'
+import SEO from '../component/seo'
+import SectionTitle  from '../component/SectionTitle'
+import Alison from '../component/Alison'
+import Leaves from '../component/Leaves'
 import Style from '../styles/about.module.scss'
 
 export default () => {
@@ -12,7 +12,7 @@ export default () => {
       <SEO title="About" />
       <SectionTitle heading="A story of freshness"/>
       <div style={{display:'flex', justifyContent:'center', marginTop:'6em'}}>
-        <div className={Style.mosaic} style={{width: '35%'}}>
+        <div className={Style.mosaic} style={{width: '50%'}}>
           <div className={Style.mosaic__item}>
             <Alison/>
           </div>
@@ -20,7 +20,7 @@ export default () => {
             <Leaves/>
           </div>
         </div>
-        <div style={{width: '35%'}}>
+        <div style={{width: '50%'}}>
           <h1 className={Style.heading}>Meet Alison </h1>
           <p className={Style.description}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
           Just click “Edit Text” or double click me to add your own content and make 
@@ -34,6 +34,8 @@ export default () => {
           company stand out and show your visitors who you are.</p>
           </div>
       </div>
+      <br/>
+      <br/> 
     </Layout>
   )
 }

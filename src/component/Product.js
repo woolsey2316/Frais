@@ -1,8 +1,6 @@
 import React from 'react'
-import ProductImage from './ProductImage'
 import ZoomableMedia from './ZoomableMedia'
 import Style from '../styles/product.module.scss'
-import Link from 'gatsby'
 import PropTypes from 'prop-types';
 
 const Product = ({product}) => {

@@ -7,12 +7,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-ffmpeg`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `./src/images`,
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,17 +1,13 @@
 import React from 'react';
 
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import SiteNavigation from "../containers/SiteNavigation"
-import Canvas from '../components/Canvas'
-import OurFavourites from '../components/OurFavourites'
-import NaturallySimple from '../components/NaturallySimple'
+import SEO from "../component/seo"
+import SiteNavigation from "./SiteNavigation"
+import Canvas from '../component/Canvas'
+import OurFavourites from '../component/OurFavourites'
+import NaturallySimple from '../component/NaturallySimple'
 import Instagram from './Instagram'
 import Footer from './Footer'
-import SideNavBar from "../containers/SideNavBar"
+import SideNavBar from "./SideNavBar"
 
 import Style1 from "../styles/site-navigation.module.scss"
 import Style2 from "../styles/navlink.module.scss"

@@ -1,8 +1,7 @@
 import React from "react"
-import SiteNavigation from "./SiteNavigation"
 import Style1 from "../styles/site-navigation.module.scss"
 import Style2 from "../styles/navlink.module.scss"
-import NavLink from '../components/NavLink'
+import NavLink from '../component/NavLink'
 
 export default () => {
   return (

@@ -38,7 +38,7 @@ export default ({ className }) => (
           <div className={Style.textContainer}>
             <h1 className={Style.heading}>Just like Nature <br/>Intended</h1>
             <p className={Style.subtext}>Handcrafted organic Soaps & Candles</p>
-            <a href="/shop all" className={buttonStyle.button} type="button">
+            <a href="/ShopAll" className={buttonStyle.button} type="button">
               Shop Now
             </a>
           </div>

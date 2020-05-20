@@ -5,7 +5,7 @@ export default ({heading, description}) => {
   return (
     <React.Fragment>
       <h1 className={Style.heading}>{heading}</h1>
-      <p className={Style.description___centered}>{description}</p>
+      <p className={Style.description___justify}>{description}</p>
     </React.Fragment>
   )
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import api from '../api/api'
 
-import Product from '../components/Product'
+import Product from '../component/Product'
 
 class ProductList extends Component {
     constructor(props) {
@@ -39,7 +39,7 @@ class ProductList extends Component {
         console.log('TCL: ProductsList -> render -> products', products)
         
         return (
-          <div style={{display:'flex', justifyContent:'center', flexWrap: 'wrap', margin:'5em'}}>
+          <div style={{display:'flex', justifyContent:'center', flexWrap: 'wrap'}}>
             {
               products.filter(this.props.filterFunction).sort((a, b) => { return (a.type < b.type) ? 1 : -1}).map(product => {
                 return (

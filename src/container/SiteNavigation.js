@@ -1,6 +1,6 @@
 import React from "react"
-import NavLink from "../components/NavLink"
-import WebsiteTitle from '../components/WebsiteTitle'
+import NavLink from "../component/NavLink"
+import WebsiteTitle from '../component/WebsiteTitle'
 
 export default (props) => {
   return (

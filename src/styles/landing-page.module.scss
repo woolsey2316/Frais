@@ -2,11 +2,9 @@
 @import 'fonts';
 @import 'media-queries';
 
-$base-font-size-large: 2em;
-$base-font-size-small: 0.8em;
 
 .heading {
-  font-size: $base-font-size-large;
+  font-size: $font-32px;
   letter-spacing: .1em;
   font-family: $primary-title;
   color: $grey;
@@ -17,23 +15,23 @@ $base-font-size-small: 0.8em;
   margin-top: 25%;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-large*1.2
+    font-size: $font-32px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-large*1.6
+    font-size: $font-32px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-large*3.2
+    font-size: $font-32px*3.2
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-large*2.1.5
+    font-size: $font-32px*2.1.5
   }
 }
 
 .subtext {
-  font-size: $base-font-size-small;
+  font-size: $font-11px;
   font-family: $subtext;
   letter-spacing: .1em;
   color: $grey;
@@ -42,18 +40,18 @@ $base-font-size-small: 0.8em;
   margin: 1em 0em;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-11px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.6
+    font-size: $font-11px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*3.2
+    font-size: $font-11px*3.2
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.1.5
+    font-size: $font-11px*2.1.5
   }
 }
 

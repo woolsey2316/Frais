@@ -2,21 +2,17 @@
 @import 'media-queries';
 @import 'colours';
 
-$base-font-size-small: 0.7em;
-$base-font-size-medium: 0.9em;
-$base-font-size-xlarge: 2.4em;
-
 .heading {
   font-size: $font-22px;
   letter-spacing: .1em;
   font-family: $primary-title;
   font-weight: 800;
-  color: $grey-green;
+  color: $grey;
   overflow: visible;
   text-transform: uppercase;
   margin: 1em 0em 0em 0em;
   line-height: 1;
-  text-align: center;
+  
 
   @media #{$mq-medium} {
     font-size: $font-22px*1.1
@@ -35,33 +31,39 @@ $base-font-size-xlarge: 2.4em;
 }
 
 .description {
-  font-size: $base-font-size-small;
+  font-size: $font-13px;
   letter-spacing: .1em;
   font-family: $subtext;
   color: $grey;
   overflow: visible;
   margin: 2em 0em;
-  line-height: 2;
+  line-height: 1.8em;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-small*1.1
+    font-size: $font-13px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-small*1.2
+    font-size: $font-13px*1.3
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-small*1.4
+    font-size: $font-13px*2.3
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-small*2.1
+    font-size: $font-13px*2.9
   }
 }
 
 .description___centered {
   @extend .description;
   text-align: center;
+
+}
+
+.description___justify {
+  @extend .description;
+  text-align: justify;
 
 }
 

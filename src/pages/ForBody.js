@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import SectionTitle  from '../components/SectionTitle'
-import ProductList from '../containers/ProductList'
+import Layout from '../component/layout'
+import SEO from '../component/seo'
+import SectionTitle  from '../component/SectionTitle'
+import ProductList from '../container/ProductList'
 
 export default () => {
   return (

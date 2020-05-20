@@ -2,15 +2,8 @@
 @import 'fonts';
 @import 'media-queries';
 
-$base-font-size-xlarge: 2.4em;
-$base-font-size-large: 1.1em;
-$base-font-size-medium: 1em;
-$base-font-size-small: 0.7em;
-$base-font-size-xsmall: 0.6em;
-
-
 .SubContainer__personName {
-  font-size: $base-font-size-xsmall;
+  font-size: $font-9px;
   letter-spacing: .1em;
   font-family: $primary-title;
   color: $grey-green;
@@ -21,18 +14,18 @@ $base-font-size-xsmall: 0.6em;
   text-transform: uppercase;
 
   @media #{$mq-medium} {
-    font-size: $base-font-size-xsmall*1.2
+    font-size: $font-9px*1.2
   }
   @media #{$mq-large} {
-    font-size: $base-font-size-xsmall*1.6
+    font-size: $font-9px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $base-font-size-xsmall*1.9
+    font-size: $font-9px*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size-xsmall*2.5
+    font-size: $font-9px*2.5
   }
 }
 
@@ -47,7 +40,7 @@ $base-font-size-xsmall: 0.6em;
   letter-spacing: 0.2em;
   padding: 0.7em 1em;
   transition: all .5s; 
-  margin-top: 40%;
+  margin-top: 20%;
   margin-left: -30%;
   width: 50%;
   z-index: 1000;

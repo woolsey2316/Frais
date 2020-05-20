@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import SectionTitle  from '../components/SectionTitle'
-import ContactForm from '../containers/ContactForm'
-import ContactDetails from '../components/ContactDetails'
+import Layout from '../component/layout'
+import SEO from '../component/seo'
+import SectionTitle  from '../component/SectionTitle'
+import ContactForm from '../container/ContactForm'
+import ContactDetails from '../component/ContactDetails'
 import Style from '../styles/contact.module.scss'
 
 export default () => {

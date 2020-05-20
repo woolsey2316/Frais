@@ -1,0 +1,32 @@
+@import 'fonts';
+@import 'media-queries';
+@import 'colours';
+
+.heading {
+  font-size: $font-48px;
+  letter-spacing: .2em;
+  font-family: $primary-title;
+  font-weight: 800;
+  color: $grey-green;
+  overflow: visible;
+  text-transform: uppercase;
+  margin: 3em 0em 0em 0em;
+  line-height: 1;
+  text-align: center;
+  
+
+  @media #{$mq-medium} {
+    font-size: $font-48px*1.1
+  }
+  @media #{$mq-large} {
+    font-size: $font-48px*1.2
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $font-48px*1.4
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $font-48px*2.1
+  }
+}

@@ -6,9 +6,9 @@ export default () => (
   <StaticQuery
     query={graphql`
     query {
-      file(relativePath: { eq: "hand-leaf.png" }) {
+      file(relativePath: { eq: "candle-on-painted-wood.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2376, quality:90) {
+          fluid(maxWidth: 1000, quality:100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -17,9 +17,7 @@ export default () => (
   `}
     render={data => {
       const imageFluid = data.file.childImageSharp.fluid
-      return (
-        <Img alt='person holding leaf' fluid={imageFluid} style={{height:'100%',width:'85%'}}/>
-      )
+      return <Img style={{width:'100%'}} alt='spoon with melted wax' fluid={imageFluid} />
     }}
   />
 )

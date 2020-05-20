@@ -10,8 +10,6 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "express-csp-header": "^4.0.0",
-    "express-favicon": "^2.0.1",
     "gatsby": "^2.19.45",
     "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.3.4",
@@ -43,12 +41,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --no-semi --single-quote --write \"**/*.{js,jsx,json,md}\"",
-    "heroku-postbuild": "gatsby build",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
     "serve": "gatsby serve",
-    "start": "node server.js",
     "clean": "gatsby clean",
-    "homepage": "http://woolsey2316.github.io/frais",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

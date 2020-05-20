@@ -7,27 +7,17 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Footer from '../containers/Footer'
-import SiteNavigation from '../containers/SiteNavigation'
+import Footer from '../container/Footer'
+import SiteNavigation from '../container/SiteNavigation'
 import Style1 from "../styles/site-navigation.module.scss"
 import Style2 from "../styles/navlink.module.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
       <SiteNavigation style={[Style1.horizontalNav, Style2.horizontalLink]} />
-        <main>{children}</main>
+        <main style={{margin:'0em 10em'}}>{children}</main>
       <Footer/>
     </>
   )

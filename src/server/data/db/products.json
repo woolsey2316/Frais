@@ -1,0 +1,127 @@
+[{
+  "_id": 1,
+  "name": "Lavender",
+  "type": "candle",
+  "price": 30,
+  "__v": 0
+},{
+  "_id": 2,
+  "name": "Three Rose",
+  "type": "candle",
+  "price": 40,
+  "__v": 0
+},{
+  "_id": 3,
+  "name": "Pink Anemone",
+  "type": "soap",
+  "price": 20,
+  "__v": 0
+},{
+  "_id": 5,
+  "name": "Star Anise & Lily",
+  "type": "candle",
+  "price": 40,
+  "__v": 0
+},{
+  "_id": 6,
+  "name": "Lemon Coco",
+  "type": "candle",
+  "price": 15,
+  "__v": 0
+},{
+  "_id": 4,
+  "name": "Laurel",
+  "type": "soap",
+  "price": 20,
+  "__v": 0
+},{
+  "_id": 7,
+  "name": "Rose Water",
+  "type": "candle",
+  "price": 15,
+  "__v": 0
+},{
+  "_id": 8,
+  "name": "Pearl Powder",
+  "type": "soap",
+  "price": 20,
+  "__v": 0
+},{
+  "_id": 9,
+  "name": "Green Clay",
+  "type": "soap",
+  "price": 20,
+  "__v": 0
+},{
+  "_id": 11,
+  "name": "Vanilla",
+  "type": "candle",
+  "price": 30,
+  "__v": 0
+},{
+  "_id": 12,
+  "name": "Aromatic Blend",
+  "type": "candle",
+  "price": 30,
+  "__v": 0
+},{
+  "_id": 13,
+  "name": "Jasmine",
+  "type": "soap",
+  "price": 10,
+  "__v": 0
+},{
+  "_id": 14,
+  "name": "Bitter Almond",
+  "type": "soap",
+  "price": 10,
+  "__v": 0
+},{
+  "_id": 15,
+  "name": "Coco & Sandalwood",
+  "type": "candle",
+  "price": 40,
+  "__v": 0
+},{
+  "_id": 16,
+  "name": "Honey",
+  "type": "candle",
+  "price": 10,
+  "__v": 0
+},{
+  "_id": 17,
+  "name": "Soy",
+  "type": "candle",
+  "price": 30,
+  "__v": 0
+},{
+  "_id": 19,
+  "name": "Tar",
+  "type": "soap",
+  "price": 10,
+  "__v": 0
+},{
+  "_id": 20,
+  "name": "Honey",
+  "type": "soap",
+  "price": 15,
+  "__v": 0
+},{
+  "_id": 18,
+  "name": "Orange & Bergamot",
+  "type": "candle",
+  "price": 40,
+  "__v": 0
+},{
+  "_id": 21,
+  "name": "Coconut Milk",
+  "type": "soap",
+  "price": 20,
+  "__v": 0
+},{
+  "_id": 10,
+  "name": "Organic Beeswax",
+  "type": "candle",
+  "price": 30,
+  "__v": 0
+}]

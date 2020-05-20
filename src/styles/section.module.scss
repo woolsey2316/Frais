@@ -2,8 +2,8 @@
 @import 'media-queries';
 @import 'colours';
 
-$base-font-size-small: 0.7em;
-$base-font-size-xlarge: 2.4em;
+
+
 
 .heading {
   font-size: $font-48px;
@@ -15,7 +15,7 @@ $base-font-size-xlarge: 2.4em;
   text-transform: uppercase;
   margin: 3em 0em 0em 0em;
   line-height: 1;
-  text-align: center;
+  
 
   @media #{$mq-medium} {
     font-size: $font-48px*1.1
@@ -61,6 +61,12 @@ $base-font-size-xlarge: 2.4em;
 .description___centered {
   @extend .description;
   text-align: center;
+
+}
+
+.description___justify{
+  @extend .description;
+  text-align: justify;
 
 }
 
