@@ -14,7 +14,6 @@ export default props => {
       }}
     >
       <h3 className={navStyle.heading}>Help</h3>
-      <nav className={navStyle.verticalNav}>
         <NavLink style={linkStyle.verticalLink} name="Shipping & Returns" />
         <NavLink style={linkStyle.verticalLink} name="Store Policy" />
         <Link
@@ -25,7 +24,6 @@ export default props => {
         >
           Payment Methods
         </Link>
-      </nav>
     </div>
   )
 }

@@ -2,7 +2,12 @@
 @import 'media-queries';
 @import 'colours';
 
-
+.outer {
+  width: 100%;
+  @media #{$mq-small} {
+    width: 40%;
+  }
+}
 
 .description {
   font-size: $font-11px;

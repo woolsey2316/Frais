@@ -10,7 +10,7 @@ $base-min-width: 5em;
 .horizontalLink {
     font-family: $subtext;
     font-size: $font-12px;
-    padding: 0.5em 0;
+    padding: 0.5em;
     font-style: normal;
     text-decoration: none;
     text-transform: uppercase;
@@ -32,6 +32,9 @@ $base-min-width: 5em;
 
     @media #{$mq-xsmall} {
         font-size: $font-12px*1.4;
+    
+    }
+    @media #{$mq-small} {
     
     }
     @media #{$mq-medium} {

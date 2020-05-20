@@ -13,8 +13,8 @@ const Image = props => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 206, height: 206, quality: 90) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 309, quality: 90) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -30,8 +30,8 @@ const Image = props => (
         return null
       }
 
-      const imageFixed = image.node.childImageSharp.fixed
-      return <Img className={style.image} alt={props.alt} fixed={imageFixed} />
+      const imageFluid = image.node.childImageSharp.fluid
+      return <Img className={style.image} alt={props.alt} fluid={imageFluid} />
     }}
   />
 )

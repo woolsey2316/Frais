@@ -1,10 +1,19 @@
-import React from 'react'
-import Image from '../component/image'
+import React, { useState } from 'react'
+
 import Style from '../styles/instagram.module.scss'
+import buttonStyle from '../styles/button.module.scss'
+
 export default props => {
-  let Albulm = []
-  for (let i = 0; i < props.size; i++) {
-    Albulm.push(<Image filename={i + '.png'} />)
+  const [show, showMore] = useState(false);
+  const showExtra = () => {
+    showMore(!show)
   }
-  return <div className={Style.container}>{Albulm}</div>
+  const arr = React.Children.toArray(props.children)
+  return <div className={Style.container}>
+    {arr.filter((val, ind, arr) => (ind < 8) || show)}
+    <div style={{ width:'100%' }}/>
+    {
+      !show && <button className={buttonStyle.showMoreButton} type="button" onClick={() => showExtra()}> Show More </button>
+    }
+    </div>
 }

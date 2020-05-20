@@ -22,11 +22,11 @@
   }
 
   @media #{$mq-xlarge} {
-    font-size: $font-11px*2.4
+    font-size: $font-11px*1.4
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $font-11px*3
+    font-size: $font-11px*1.6
   }
 
   &:hover {
@@ -34,6 +34,53 @@
     background-color: $olive;
     color: white;
     cursor: pointer;
+    
+  }
+}
+
+.showMoreButton {
+  background: transparent;
+  padding: 1em 2em;
+  font-family: $primary-title;
+  border: 0.3em solid $grey;
+  color: $grey;
+  font-size: $font-14px;
+  text-transform: uppercase; 
+
+  &:hover {
+    cursor:pointer;
+    background: $grey;
+    color: white;
+
+  }
+
+  @media #{$mq-xxxsmall} {
+    font-size: $font-14px;
+  }
+  @media #{$mq-xxsmall} {
+    font-size: $font-14px;
+  }
+
+  @media #{$mq-xsmall} {
+    font-size: $font-14px;
+  }
+
+  @media #{$mq-small} {
+    font-size: $font-14px;
+  }
+
+  @media #{$mq-medium} {
+
+  }
+  @media #{$mq-large} {
+    
+  }
+
+  @media #{$mq-xlarge} {
+    
+  }
+
+  @media #{$mq-xxlarge} {
     
   }
 }

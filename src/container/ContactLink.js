@@ -13,10 +13,8 @@ export default props => {
       }}
     >
       <h3 className={navStyle.heading}>Contact</h3>
-      <nav className={navStyle.verticalNav}>
-        <p className={navStyle.verticalNav}>123-456-7890</p>
-        <p className={navStyle.verticalNav}>info@myDomain.com</p>
-      </nav>
+      <p className={navStyle.verticalNav}>123-456-7890</p>
+      <p className={navStyle.verticalNav}>info@myDomain.com</p>
       <SocialMediaQuilt
         styles={{ ul: Style.ul___horizontal, li: Style.li___horizontal }}
         color="black"

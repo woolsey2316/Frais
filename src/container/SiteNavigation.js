@@ -9,7 +9,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fas)
 
 export default props => {
-  const [showMenu, setShow] = useState(false)
+  const [showMenu, setShow] = useState(true)
   const showNav = () => {
     setShow(!showMenu)
   }
@@ -31,7 +31,7 @@ export default props => {
       )}
       <button className={Style1.menuButton} onClick={() => showNav()}>
         <FontAwesomeIcon
-          className={Style1.menuIcon}
+          className={Style1.hamburgerMenu}
           icon={showMenu ? 'times' : 'bars'}
         />
       </button>

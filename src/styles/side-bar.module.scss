@@ -8,7 +8,10 @@ $padding-left: 3em;
   bottom: $height;
   padding-left: $padding-left;
   z-index: 10000;
-
+  display: none;
+  @media #{$mq-small} {
+    display: block;
+  }
   @media #{$mq-medium} {
     height: $height*1.02;
     padding-left: $padding-left*1.2;
@@ -31,5 +34,5 @@ $padding-left: 3em;
 
 .navbar__bottom {
   @extend .navbar__sticky;
-  bottom: -4.7em;
+  bottom: -7.2em;
 }

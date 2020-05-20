@@ -11,7 +11,7 @@
   text-transform: uppercase;
   margin: 0em;
   line-height: 1.2em;
-  margin-top: 35vh;
+  margin-top: 25vh;
 
   @media #{$mq-xxxsmall} {
     font-size: $font-32px
@@ -92,10 +92,10 @@
   display: flex;
   flex-direction: column; 
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   height: 100%;
-  margin-left: 10vw;
+  margin-left: 30vw;
 
   @media #{$mq-xxxsmall} {
     

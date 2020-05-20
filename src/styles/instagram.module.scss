@@ -3,19 +3,28 @@
 @import 'colours';
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   
-  display: 'flex';
-  flex-wrap: 'wrap';
-  justify-content: 'center';
   @media #{$mq-small} {
     margin: 5% 10%;
   }
 }
 
 .image {
-  width: 90vw;
+  width: 65vw;
+  margin: 1em auto;
+  &:nth-child(3n), &:nth-child(3n-1) {
+    display: none;
+  }
   @media #{$mq-small} {
-    margin: 2%;
+    margin: 1em;
+    width: 206px;
+    height: 206px;
+    &:nth-child(3n), &:nth-child(3n-1) {
+      display: block;
+    }
   }
 }
 
