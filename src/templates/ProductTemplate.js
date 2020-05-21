@@ -8,13 +8,9 @@ export default ({ pageContext }) => {
   return (
     <Layout>
       <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          margin: '0em 25em',
-        }}
+        className={Style.outer}
       >
-        <div>
+        <div className={Style.inner__left}>
           <ProductImage filename={`products/${pageContext.product._id}.webp`} />
           <p className={Style.description} style={{ float: 'right' }}>
             I'm a product description. This is a great place to "sell" your
@@ -23,11 +19,11 @@ export default ({ pageContext }) => {
             instead of using manufacturers' copy.
           </p>
         </div>
-        <div style={{ padding: '0em 3em', minWidth: '60%' }}>
+        <div className={Style.inner__right}>
           <p className={Style.name}>{pageContext.product.name}</p>
           <p className={Style.price}>{'$' + pageContext.product.price}</p>
           <p className={Style.subheading}>Quantity</p>
-          <input className={Style.input} type="number" value="1"></input>
+          <input className={Style.input} type="number" defaultValue="1"></input>
           <button className={Style.button}>ADD TO CART</button>
           <DropDownText
             title="PRODUCT INFO"

@@ -10,7 +10,7 @@ export default () => (
       justifyContent: 'flex-end',
     }}
   >
-    <video className={Style.MainContainer__video} width="100%" controls="true" autoplay="true" loop="true">
+    <video className={Style.MainContainer__video} width="100%" controls={true} autoPlay={true} loop={true}>
       <source src={Video} type="video/mp4" />
     </video>
   </div>

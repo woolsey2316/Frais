@@ -12,7 +12,7 @@ export default ({ title, text }) => {
         {title}
       </button>
       <button className={Style.plusButton} onClick={clicked}>
-        +
+        {show ? "-" : "+"}
       </button>
       {show && <p className={Style.text}>{text}</p>}
     </div>

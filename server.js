@@ -25,7 +25,7 @@ app.use(
   })
 )
 
-app.use(favicon(__dirname + '/public/favicon.ico'))
+app.use(favicon(__dirname + '/favicon.ico'))
 // the __dirname is the current directory from where the script is running
 app.use(express.static(__dirname))
 app.use(express.static(path.join(__dirname, 'public')))

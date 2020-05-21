@@ -2,10 +2,13 @@
 @import 'media-queries';
 @import 'colours';
 
-.container {
+.outer {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   margin-top: 5em;
-
+  @media #{$mq-small} {
+    flex-direction: row;
+  }
 }

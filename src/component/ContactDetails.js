@@ -3,7 +3,7 @@ import Style from '../styles/contact-details.module.scss'
 
 export default () => {
   return (
-    <div className={Style.outer}>
+    <div className={Style.inner}>
       <p className={Style.description}>
         If you have questions or special inquiries, you're welcome to contact me
         or fill out this form

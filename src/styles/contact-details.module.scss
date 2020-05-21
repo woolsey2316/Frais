@@ -2,7 +2,7 @@
 @import 'media-queries';
 @import 'colours';
 
-.outer {
+.inner {
   width: 100%;
   @media #{$mq-small} {
     width: 40%;
@@ -10,27 +10,25 @@
 }
 
 .description {
-  font-size: $font-11px;
+  font-size: $font-12px;
   letter-spacing: .1em;
   font-family: $subtext;
   color: $grey;
   overflow: visible;
-  margin: 3em;
-  line-height: 1.8em;
 
   @media #{$mq-medium} {
-    font-size: $font-11px*1.2
+    font-size: $font-12px*1.2
   }
   @media #{$mq-large} {
-    font-size: $font-11px*1.6
+    font-size: $font-12px*1.6
   }
 
   @media #{$mq-xlarge} {
-    font-size: $font-11px*1.9
+    font-size: $font-12px*1.9
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $font-11px*2.5
+    font-size: $font-12px*2.5
   }
 }
 

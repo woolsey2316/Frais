@@ -13,15 +13,7 @@ export default () => (
   <React.Fragment>
     <SEO title="Home" />
     <SideNavBar />
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        marginBottom: '3.5%',
-      }}
-    >
-      <SiteNavigation />
-    </div>
+    <SiteNavigation />
     <Canvas />
     <OurFavourites />
     <NaturallySimple />

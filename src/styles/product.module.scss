@@ -2,18 +2,48 @@
 @import 'media-queries';
 @import 'colours';
 
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  @media #{$mq-small} {
+    margin: 5em 0;
+  }
+}
+
+.inner__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 20%;
+  width: 100%;
+  @media #{$mq-small} {
+    margin: 0em 3em;
+    min-width: 20%;
+    width: 40%;
+  }
+}
+
+.inner__right {
+  width: 100%;
+  @media #{$mq-small} {
+    width: 40%
+  }
+}
+
 .name {
-  font-size: $font-16px;
+  font-size: $font-20px;
   color: $grey;
   font-family: $subtext;
-  margin: 1em 0em 0em 0em;
+  margin: 0;
 }
 
 .price {
-  font-size: $font-14px;
+  font-size: $font-16px;
   color: $grey;
   font-family: $subtext;
-  margin: 0.5em 0em 1em 0em;
 }
 
 .subheading {
@@ -27,7 +57,7 @@
   color: $grey;
   font-family: $subtext;
   line-height: 1.6em;
-  margin-top: 3.5em;
+  margin-top: 2em;
 }
 
 .button {
@@ -39,9 +69,9 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.3em 5em;
+  padding: 1em 5em;
   transition: all .5s; 
-  width:100%;
+  width: 90%;
   z-index: 1000;
   margin: 1em 0em;
 
@@ -52,7 +82,9 @@
     cursor: pointer;
     
   }
-
+  @media #{$mq-small} {
+    padding: 0.3em 5em;
+  }
   @media #{$mq-medium} {
     font-size: $font-10px*1.2
   }

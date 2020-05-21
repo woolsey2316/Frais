@@ -11,7 +11,7 @@ export default () => {
     <Layout>
       <SEO title="Contact" />
       <h1 className={style.heading__centered}>Let's Talk</h1>
-      <div className={Style.container}>
+      <div className={Style.outer}>
         <ContactDetails />
         <ContactForm />
       </div>

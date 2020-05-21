@@ -33,7 +33,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
   console.log('fetched products from remote server')
   allProduct.data.data.forEach(product => {
     createPage({
-      path: `./${product._id}/`,
+      path: `/${product._id}/`,
       component: require.resolve('./src/templates/ProductTemplate.js'),
       context: { product },
     })

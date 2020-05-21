@@ -19,7 +19,7 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className={Style.formContainer}>
+      <div className={Style.inner}>
         <form
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}

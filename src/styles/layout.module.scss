@@ -30,5 +30,11 @@
 }
 
 .container {
-  margin:'0em 10em';
+  margin: 0em 1em;
+  @media #{$mq-small} {
+    margin: 0 7%;
+  }
+  @media #{$mq-medium} {
+    margin: 0 14.1%;
+  }
 }
