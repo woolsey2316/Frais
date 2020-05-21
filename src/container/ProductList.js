@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import alias from '../api/api'
+import apis from '../api/api'
 
 import Product from '../component/Product'
 
@@ -15,9 +15,9 @@ class ProductList extends Component {
   componentDidMount = async () => {
     this.setState({ isLoading: true })
 
-    await alias.getAllProducts().then(products => {
-      console.log('data fetched from server ? ' + products.data.success);
-      console.log('first product retrieved : ' + products.data.data[0].name)
+    await apis.getAllProducts().then(products => {
+      console.log('data fetched from server ? ' + products.data.success)
+      console.log('base url: ' + process.env.REACT_APP_API_ENDPOINT)
       this.setState({
         products: products.data.data,
         isLoading: false,

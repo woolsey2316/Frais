@@ -1,6 +1,6 @@
-@import 'colours';
-@import 'fonts';
-@import 'media-queries';
+
+@use 'assets' as *;
+
 
 .button {
   border: .25em solid $grey;

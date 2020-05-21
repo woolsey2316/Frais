@@ -1,6 +1,4 @@
-@import 'fonts';
-@import 'media-queries';
-@import 'colours';
+@use 'assets' as *;
 
 .container {
   display: flex;

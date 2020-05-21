@@ -28,12 +28,11 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
-  // `getProductData` is a function that fetches our data
   const allProduct = await get('products/')
-  console.log('fetched products from remote server')
+  console.log('fetched products from remote server: ' + process.env.REACT_APP_API_ENDPOINT)
   allProduct.data.data.forEach(product => {
     createPage({
-      path: `/products/${product._id}/`,
+      path: `/product/${product._id}/`,
       component: require.resolve('./src/templates/ProductTemplate.js'),
       context: { product },
     })

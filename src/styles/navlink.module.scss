@@ -1,6 +1,4 @@
-@import 'fonts';
-@import 'media-queries';
-@import 'colours';
+@use 'assets' as *;
 
 // Font-Size
 $base-line-height: 1.5;

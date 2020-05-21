@@ -1,6 +1,4 @@
-@import 'fonts';
-@import 'media-queries';
-@import 'colours';
+@use 'assets' as *;
 
 $base-height: 5em;
 $base-width: 12em;

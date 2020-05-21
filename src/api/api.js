@@ -4,8 +4,6 @@ const api = axios.create({
   baseURL: process.env.REACT_APP_API_ENDPOINT,
 })
 
-console.log("axios connecting to remote server at: " + process.env.REACT_APP_API_ENDPOINT);
-
 export const insertProduct = payload => api.post('/product', payload)
 export const getAllProducts = () => api.get('/products')
 export const updateProductById = (id, payload) =>

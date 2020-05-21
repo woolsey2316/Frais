@@ -36,7 +36,8 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "sass": "^1.26.5"
   },
   "keywords": [
     "gatsby"

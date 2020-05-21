@@ -1,6 +1,6 @@
-@import 'colours';
-@import 'fonts';
-@import 'media-queries';
+
+@use 'assets' as *;
+
 
 .heading {
   font-size: $font-32px;

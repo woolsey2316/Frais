@@ -1,6 +1,6 @@
-@import 'fonts';
-@import 'colours';
-@import 'media-queries';
+@use 'assets' as *;
+
+
 
 .banner {
   width: 100%;

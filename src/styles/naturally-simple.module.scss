@@ -1,6 +1,6 @@
-@import 'colours';
-@import 'fonts';
-@import 'media-queries';
+
+@use 'assets' as *;
+
 
 .SubContainer__personName {
   font-size: $font-9px;

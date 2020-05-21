@@ -1,12 +1,12 @@
-@import 'breakpoints';
+@use 'breakpoints';
 
 // Media Queries
-$mq-xxxsmall: "(min-width: #{$bp-xxxsmall})";
-$mq-xxsmall: "(min-width: #{$bp-xxsmall})";
-$mq-xsmall: "(min-width: #{$bp-xsmall})";
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-xxxsmall: "(min-width: #{breakpoints.$bp-xxxsmall})";
+$mq-xxsmall: "(min-width: #{breakpoints.$bp-xxsmall})";
+$mq-xsmall: "(min-width: #{breakpoints.$bp-xsmall})";
+$mq-small: "(min-width: #{breakpoints.$bp-small})";
+$mq-medium: "(min-width: #{breakpoints.$bp-medium})";
+$mq-large: "(min-width: #{breakpoints.$bp-large})";
+$mq-xlarge: "(min-width: #{breakpoints.$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{breakpoints.$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
