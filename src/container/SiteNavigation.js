@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import NavLink from '../component/NavLink'
 import WebsiteTitle from '../component/WebsiteTitle'
 import Style1 from '../styles/site-navigation.module.scss'

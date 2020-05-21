@@ -37,7 +37,7 @@
   font-size: $font-20px;
   color: $grey;
   font-family: $subtext;
-  margin: 0;
+  margin: 1em 0em;
 }
 
 .price {
@@ -58,6 +58,7 @@
   font-family: $subtext;
   line-height: 1.6em;
   margin-top: 2em;
+  text-align: justify;
 }
 
 .button {

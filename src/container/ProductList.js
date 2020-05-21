@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import api from '../api/api'
+import alias from '../api/api'
 
 import Product from '../component/Product'
 
@@ -8,15 +8,16 @@ class ProductList extends Component {
     super(props)
     this.state = {
       products: [],
-      isLoading: false,
+      isLoading: true,
     }
   }
 
   componentDidMount = async () => {
     this.setState({ isLoading: true })
 
-    await api.getAllProducts().then(products => {
-      console.log('data retrieved : ' + products.data.data)
+    await alias.getAllProducts().then(products => {
+      console.log('data fetched from server ? ' + products.data.success);
+      console.log('first product retrieved : ' + products.data.data[0].name)
       this.setState({
         products: products.data.data,
         isLoading: false,
@@ -28,15 +29,14 @@ class ProductList extends Component {
     const { products, isLoading } = this.state
     console.log('rendering triggered')
     if (isLoading) {
-      console.log('products variable is still loading')
+      console.log('aysnc function still retrieving data')
       return null
     }
 
     if (!products.length) {
-      console.log('products is empty')
+      console.log('a render was called before data had been fetched, cancelling rendering')
       return null
     }
-    console.log('TCL: ProductsList -> render -> products', products)
 
     return (
       <div
