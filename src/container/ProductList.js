@@ -17,7 +17,8 @@ class ProductList extends Component {
 
     await apis.getAllProducts().then(products => {
       console.log('data fetched from server ? ' + products.data.success)
-      console.log('base url: ' + process.env.REACT_APP_API_ENDPOINT)
+      console.log('endpoint url: ' + process.env.REACT_APP_API_ENDPOINT)
+      console.log('base url: ' + process.env.BASE_URL)
       this.setState({
         products: products.data.data,
         isLoading: false,
