@@ -49,7 +49,7 @@
     "format": "prettier --no-semi --single-quote --write \"**/*.{js,jsx,json,md}\"",
     "heroku-postbuild": "gatsby build",
     "serve": "gatsby serve",
-    "start": "node server.js",
+    "start": "gatsby serve",
     "clean": "gatsby clean",
     "homepage": "http://woolsey2316.github.io/frais",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

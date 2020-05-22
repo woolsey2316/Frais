@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: process.env.GATSBY_URL,
+  baseURL: process.env.GATSBY_BASE_URL,
 })
 
 export const insertProduct = payload => api.post('/product', payload)
