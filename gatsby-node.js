@@ -7,14 +7,8 @@
 // You can delete this file if you're not using it
 const path = require('path')
 const axios = require('axios')
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
 
-const REACT_APP_API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT
-console.log('api endpoint: ' + process.env.REACT_APP_API_ENDPOINT)
-
-const get = endpoint => axios.get(REACT_APP_API_ENDPOINT + endpoint)
+const get = endpoint => axios.get(process.env.BASE_URL + endpoint)
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -29,7 +23,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.createPages = async ({ actions: { createPage } }) => {
   const allProduct = await get('products/')
-  console.log('fetched products from remote server: ' + process.env.REACT_APP_API_ENDPOINT)
+  console.log('fetched products from remote server: ' + process.env.BASE_URL)
   allProduct.data.data.forEach(product => {
     createPage({
       path: `/product/${product._id}/`,
