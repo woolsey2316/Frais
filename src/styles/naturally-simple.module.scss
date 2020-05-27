@@ -112,6 +112,8 @@
 }
 
 .SubContainer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

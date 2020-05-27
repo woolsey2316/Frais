@@ -2,6 +2,8 @@
 @use 'assets' as *;
 
 .ul___horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
   list-style-type: none; 
@@ -22,6 +24,8 @@
 }
 
 .ul___vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   padding-left: 0%;

@@ -85,6 +85,8 @@
 }
 
 .MainContainer__topCorner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,6 +128,8 @@
 }
 
 .MainContainer__bottomRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -142,6 +146,8 @@
   display: none;
 
   @media #{$mq-small} {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;

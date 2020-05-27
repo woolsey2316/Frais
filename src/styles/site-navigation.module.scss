@@ -30,6 +30,8 @@ $base-width: 12em;
 }
 
 .horizontalNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;  
   align-items: center;
   justify-content: center;
@@ -78,6 +80,8 @@ $base-width: 12em;
 }
 
 .verticalNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;  
   flex-direction: column;
   align-content: flex-start;
