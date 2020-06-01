@@ -17,6 +17,7 @@ class ProductList extends Component {
 
     await apis.getAllProducts().then(products => {
       console.log('data fetched from server ? ' + products.data.success)
+      console.table(products.data.data)
       console.log('endpoint url: ' + process.env.GATSBY_BASE_URL)
       console.log('base url: ' + process.env.BASE_URL)
       console.log('env : ' + process.env.NODE_ENV)
